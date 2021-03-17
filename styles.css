@@ -148,3 +148,11 @@ button {
   position: relative;
   right: 30px;
 }
+
+#dropdown-container div ul{
+  list-style-type: none;
+}
+
+#dropdown-container div ul li{ 
+  margin-bottom: 10px;
+}
