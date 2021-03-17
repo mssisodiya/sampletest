@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" type="text/css">
+  <script language="javascript" type="text/javascript" src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <script src="myscript.js"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div id='sidebar' class="sidenav">
+    <div class="dashboard">
+      <i class="far fa-tachometer-alt"></i>
+      <a class="active" href="#home">Dashboard</a>
+    </div>
+    <div class="ruleengine">
+      <i class="far fa-list-alt"></i>
+      <a id="dropdown-btn" class="dropdown-btn" onclick="openDrop()">Rule Engine
+        <i class="fas fa-angle-down"></i>
+      </a>
+    </div>
+    <div id="dropdown-container" class="dropdown-container">
+      <div>
+        <ul style="list-style-type: none;">
+          <li><a href="#">Add new rule</a></li>
+          <li><a href="#">Search rule</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="menu">
+
+    <div class="icon">
+      <button id='button' onclick="openNav()" class="fas fa-bars"></button>
+    </div>
+
+  </div>
+  <div id="content" class="content">
+
+    <div id=container>
+      <h2 style="float: left;">Rules</h2>
+      <div style="float: right;">Rule Engine / Add Rules</div>
+    </div>
+    <div class="addrules">
+      <div class="sectionheading">
+        <h3>Add Rules</h3>
+      </div>
+      <hr>
+      <form id="rule-form" method="post">
+        <div class="grid-container">
+          <label>Rule id</label>
+          <label>Rule Name</label>
+          <label>Rule Type</label>
+          <label>Rule Group</label>
+          <label>Rank</label>
+          <label>Applied On</label>
+          <label>Expires On</label>
+          <div><input type="text" value="" id="ruleid" name="ruleid"></div>
+          <div><input type="text" value="" id="rulename" name="rulename"></div>
+
+          <div><select id="ruletype" name="ruletype">
+              <option value="type1">Type 1</option>
+              <option value="type2">Type 2</option>
+            </select></div>
+          <div><select id="rulegroup" name="rulegroup">
+              <option value="group1">Group 1</option>
+              <option value="group2">Group 2</option>
+            </select></div>
+          <div><select id="rank" name="rank">
+              <option value="air1">AIR 1</option>
+              <option value="air2">AIR 2</option>
+            </select></div>
+
+          <div id="addingCalendar">
+            <input type="text" id="applied" value="" name="applied" placeholder="mm-dd-yyyy">
+            <i class="far fa-calendar-alt addingCalendar"></i>
+          </div>
+          <div>
+            <input type="text" id="expires" value="" name="expires" placeholder="mm-dd-yyyy">
+            <i class="far fa-calendar-alt addingCalendar" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="description">Rule Description</div>
+        <textarea class="textarea" id="description" name="description" rows="3" cols="50">
+        </textarea>
+        <input class="submit" id="submit" type="button" value="Add Rules" name="submit"><br>
+
+    </div>
+    </form>
+    <table id="details">
+      <tr>
+        <th>Rule id</th>
+        <th>Rule Name</th>
+        <th>Rule type</th>
+        <th>Rule group</th>
+        <th>Rank</th>
+        <th>Applied on</th>
+        <th>Expires on</th>
+      </tr>
+    </table>
+  </div>
+  </div>
+  </div>
+</body>
+
+</html>

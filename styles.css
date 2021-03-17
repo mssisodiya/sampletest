@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color: #F1F1EE
+}
+
+.sidenav {
+  width: 0px;
+  background-color: #C5DFF3;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.dashboard {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0.3em;
+  margin-left: 1em;
+}
+
+.ruleengine {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0.3em;
+  margin-left: 1em;
+}
+
+.sidenav a {
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+div.content {
+  padding: 1px 16px;
+}
+
+.menu {
+  background-color: white;
+  font-size: 20px;
+}
+
+.addrules {
+  background-color: white;
+  height: 310px;
+  box-shadow: 2px;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container>label {
+  width: 100px;
+}
+
+.textarea {
+  width: 96%;
+  margin-left: 10px;
+}
+
+.submit {
+  background-color: white;
+  color: black;
+  border: 3px solid #b9d9f1;
+  margin-right: 30px;
+  float: right;
+}
+
+.description {
+  margin-left: 10px;
+}
+
+.sectionheading {
+  margin-left: 5px;
+  color: rgb(2, 2, 163);
+}
+
+
+input[type=text],
+input[type=date],
+select {
+  width: 120px;
+  padding: 6px 2px;
+  background-color: white;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+table tr th {
+  width: 200vh;
+  border: 1px solid;
+  text-align: center;
+  padding-left: 0px;
+}
+
+table td {
+  width: 100px;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  border-left: 1px solid;
+  text-align: center;
+  padding-left: 0px;
+}
+
+button {
+  border-style: round;
+  outline: none;
+  border-radius: 5px;
+  background-color: #b9d9f1;
+  height: 34px;
+  width: 35px;
+  margin-bottom: 9px;
+  margin-top: 9px;
+  margin-left: 9px;
+}
+
+#container {
+  padding-bottom: 80px;
+}
+
+#container>div {
+  padding-top: 25px;
+}
+
+.dropdown-container {
+  display: none;
+}
+
+.dropdown-container>li {
+  margin-bottom: 10px;
+}
+
+.fa-angle-down {
+  float: right;
+  padding-left: 30px;
+}
+
+.addingCalendar {
+  color: rgba(0, 0, 255, 0.781);
+  position: relative;
+  right: 30px;
+}
